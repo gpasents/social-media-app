@@ -10,15 +10,14 @@ import memories from './images/memories.png'
 import useStyles from './styles'
 const App = () => {
     const [currentId,setCurrentId] = useState(0);
-
-
-    const classes = useStyles();
     const dispatch = useDispatch();
+    const classes = useStyles();
 
-    useEffect(()=>{
+    useEffect(() => {
       dispatch(getPosts());
+      console.log('triggered')
+    }, [currentId, dispatch]);
 
-    },[currentId, dispatch])
     return (
         <Container maxWidth="lg">
       <AppBar className={classes.appBar} position="static" color="inherit">
