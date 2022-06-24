@@ -19,7 +19,7 @@ const Navbar = () => {
             <Button variant = "contained" className={classes.logout} color="secondary"></Button>
           </div>
         ):(
-          <Button component={Link} to="/auth" variant="contained" color="primary"></Button>
+          <Button component={Link} to="/auth" variant="contained" color="primary">Sign Up</Button>
 
         )}
 
