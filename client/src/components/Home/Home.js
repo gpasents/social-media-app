@@ -12,7 +12,6 @@ const Home = () => {
 
     useEffect(() => {
         dispatch(getPosts());
-        console.log('triggered')
     }, [currentId, dispatch]);
 
 
