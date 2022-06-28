@@ -29,7 +29,7 @@ const Navbar = () => {
     }
 
     setUser(JSON.parse(localStorage.getItem('profile')))
-  },[location,user])
+  },[location])
 
   const classes = useStyles();
   return (
